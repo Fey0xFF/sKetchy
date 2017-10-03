@@ -1,0 +1,22 @@
+#container {
+  background-color: blue;
+  border: 1px solid black;
+  margin: auto;
+  padding: auto;
+  position: relative;
+
+}
+
+.square {
+  background-color: red;
+  outline: 1px solid black;
+  margin: auto;
+  padding: auto;
+  display: inline-block;
+}
+
+
+.mouseOn {
+  background-color: black;
+  opacity: 0;
+}
