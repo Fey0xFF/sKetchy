@@ -1,22 +1,39 @@
+* {
+  font-family: arial, sans-serif;
+  font-weight: bold;
+
+}
+
 #container {
-  background-color: #000;
-  border: 1px solid black;
-  margin: auto;
-  padding: auto;
   position: relative;
+	margin:auto;
+	padding: 0;
+	border: none;
+  font-size: 0;
+  background-color: white;
+  border-radius: 5px;
 
 }
 
 .square {
-  background-color: red;
-  outline: 1px solid black;
-  margin: auto;
-  padding: auto;
-  display: inline-block;
+  margin:0;
+	padding:0;
+	border:none;
+	display:inline-block;
+  border-radius: 5px;
+  opacity: 0;
+  background-color: black;
 }
 
+body {
+  background-color: lightblue;
+}
 
-.mouseOn {
-  background-color: black;
-  opacity: 0;
+p {
+  font-family: arial, sans-serif;
+}
+
+button {
+  background-color: blue;
+  color: white;
 }
