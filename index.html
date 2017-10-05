@@ -1,37 +1,25 @@
 <!DOCTYPE HTML>
-<html lang = "en">
-
 <head>
   <title>sKetchy</title>
   <link rel = "stylesheet" href = "style.css">
 </head>
 
 <body>
-  <h1>sKetchy</h1>
-
+  <h1>sKetchy by Feythelus</h1>
+  <div>
+    <!-- Interaction -->
+    <button id="brushBlack">Black Brush</button>
+    <button id="brushColor">Random Brush Color</button>
+    <button id="fadeToggle">Toggle Fade + / -</button>
+    <p>Clicking On The Canvas Enables / Disables The Brush</p>
+  </div>
+  <!-- Grid -->
+  <div id="container"></div><br>
+  <!-- Reset and adjust grid buttons -->
   <button id="resetGrid">Default Sketchpad</button>
-  <div id="settings">
-    <div>
-      <form>
-        <p>Enter Grid Units</p>
-        <input type="text" id="userGridUnits" value="8"></input>
-        <br><br>
-      </form>
-
-      <button id="userResetGrid">Adjust Sketchpad Grid</button>
-      <br>
-      <br>
-      <button id="brushBlack">Black Brush</button>
-      <button id="brushColor">Random Brush Color</button>
-      <button id="fadeToggle">Toggle Fade + / -</button>
-
-      <p>Clicking On The Canvas Enables / Disables The Brush</p>
-
-  <div id="container"></div>
-
-
-
-
+  <button id="userResetGrid">Set Sketchpad Units To</button>
+  <input type="text" id="userGridUnits" value="8"></input>
+  <!-- Pull jQuery and Javascript files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="scripts.js"></script>
 

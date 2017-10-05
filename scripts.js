@@ -15,13 +15,13 @@ function brushApply() {
     console.log(opac);
 
     if (reverseFade) {
-      opac -= 0.10;
+      opac -= 0.20;
     } else {
-      opac += 0.10;
+      opac += 0.20;
     }
     $(this).css("opacity", opac);
 
-// credit to this wonderful post for random color: https://stackoverflow.com/questions/1484506/random-color-generator
+    // credit to this wonderful post for random color: https://stackoverflow.com/questions/1484506/random-color-generator
     if (randCol) {
       var letters = '0123456789ABCDEF';
       var color = '#';
@@ -55,7 +55,6 @@ $("#fadeToggle").click(function fadeToggler() {
   }
 });
 
-
 //  ENABLE/DISABLE THE BRUSH
 $("#container").click(function() {
   if (brushOn === true) {
@@ -64,8 +63,6 @@ $("#container").click(function() {
     brushOn = true;
   }
 })
-
-
 
 //  RESET GRID TO DEFAULT LISTENER
 $("#resetGrid").click(function (){
@@ -80,8 +77,8 @@ $("#userResetGrid").click(function (){
 
 //  FUNCTION TO INITIALIZE GRID
 function gridInit (numSquare,gridHeight,gridWidth) {
-  $('#container').width(gridHeight);
-  $('#container').height(gridWidth);
+  $('#container').width(gridWidth);
+  $('#container').height(gridHeight+5);
   for (rows = 0; rows < numSquare; rows++) {
     for (cols = 0; cols < numSquare; cols++) {
       $("#container").append("<div class = 'square'></div>");
@@ -101,5 +98,5 @@ function resetGrid () {
 function userDefineGrid () {
   resetGrid();
   var uGU = $('#userGridUnits').val();
-  gridInit(uGU,960,960);
+  gridInit(uGU,720,720);
 }
